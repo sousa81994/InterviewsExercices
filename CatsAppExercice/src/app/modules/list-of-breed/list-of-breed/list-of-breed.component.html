@@ -1,0 +1,13 @@
+<div class="not-loaded-page" *ngIf="!isLoaded">
+    <mat-progress-spinner class="spinner" color="primary" mode="indeterminate"></mat-progress-spinner>
+</div>
+<div class="page" *ngIf="isLoaded">
+    <div class="title">
+        <h1>List of Breeds</h1>
+    </div>
+    <div class="menu-list">
+        <div class="menu" *ngFor="let breed of listOfBreeds; let i=index">
+            <app-breed [breed]="breed" [index]="i" (breedClicked)="breedClicked($event)"></app-breed>
+        </div>
+    </div>
+</div>

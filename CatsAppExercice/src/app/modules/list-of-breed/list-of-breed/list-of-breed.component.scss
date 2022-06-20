@@ -1,0 +1,28 @@
+.not-loaded-page {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.page {
+    width: 100vw;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.title {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.menu-list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    justify-content: center;
+}
+
+.menu {
+    text-align: center;
+    display: block;
+    margin: 5px;
+}

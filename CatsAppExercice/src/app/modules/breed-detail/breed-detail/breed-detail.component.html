@@ -1,0 +1,29 @@
+<div class="not-loaded-page" *ngIf="!isLoaded">
+    <mat-progress-spinner class="spinner" color="primary" mode="indeterminate"></mat-progress-spinner>
+</div>
+<div class="page" *ngIf="isLoaded">
+    <div class="title">
+        <h1>{{breed.breed}}</h1>
+    </div>
+    <div class="details">
+        <div class="details-list">
+           <h2>Breed Details</h2> 
+            <p *ngIf="breed.breed"><b>Name:</b> {{breed.breed}}</p>
+            <p *ngIf="breed.country"><b>Country:</b> {{breed.country}}</p>
+            <p *ngIf="breed.origin"><b>Origin:</b> {{breed.origin}}</p>
+            <p *ngIf="breed.coat"><b>Coat:</b> {{breed.coat}}</p>
+            <p *ngIf="breed.pattern"><b>Patter:</b> {{breed.pattern}}</p>
+        </div>
+        <mat-divider class="divider"></mat-divider>
+        <div class="facts">
+            <h2>Some facts</h2>
+            <p><b>Page Fact:</b> {{pageFact}}</p>
+            <p><b>Random fact:</b> {{randomFact}}</p>
+        </div>
+        <div class="button-div">
+            <button (click)="goToHomepage()" class="button" mat-icon-button color="primary">
+                <mat-icon>home</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

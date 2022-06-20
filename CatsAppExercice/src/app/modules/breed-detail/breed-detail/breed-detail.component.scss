@@ -1,0 +1,52 @@
+.not-loaded-page {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.spinner {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner ::ng-deep circle {
+    stroke: rgb(209, 222, 226);
+    stroke-width: 5% !important;
+}
+
+.page {
+    width: 100vw;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.details {
+    height: 100vh;
+    width: fit-content;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.facts {
+    margin-top: 10px;
+}
+
+.button-div {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(84, 159, 182);
+    color: #fff;
+}
+
+.divider {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
